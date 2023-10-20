@@ -224,7 +224,6 @@ vagrant up
 ![](images/app-working.png)
 
 - We can validate RabbitMq service.
-
 ![](images/rabbitmq-working.png)
 
 - Next we can check our DB/Memcache services.

@@ -380,7 +380,7 @@ systemctl status tomcat
 
 - We are still in `/tmp` directory, we will clone our source code here.
 ```sh
-git clone https://github.com/rumeysakdogan/vprofile-project.git
+git clone https://github.com/pandeyshubham03/shubham-projects.git
 ls
 cd vprofile-project/
 ```

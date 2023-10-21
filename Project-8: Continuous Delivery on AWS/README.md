@@ -117,7 +117,7 @@ We will create paramters for below variables.
 ```sh
 CODEARTIFACT_TOKEN	 SecureString	
 HOST      https://sonarcloud.io
-ORGANIZATION           rumeysa-devops-projects
+ORGANIZATION           devops-projects
 PROJECT                vprofile-repo-rd
 SONARTOKEN             SecureString
 ```
@@ -256,7 +256,7 @@ sudo -i
 yum install mysql git -y
 mysql -h <RDS_endpoint> -u <RDS_username> -p<RDS_password>
 show databases;
-git clone https://github.com/rumeysakdogan/vprofileproject-all.git
+git clone https://github.com/pandeyshubham03/vprofileproject-all.git
 cd vprofileproject-all/
 git checkout cd-aws
 cd src/main/resources

@@ -93,7 +93,7 @@ git checkout ci-jenkins
 git checkout -b cicd-jenkins-ansible
 ```
 
-We will add code from `jenkins-ansible-code` branch of `https://github.com/rumeysakdogan/vprofileproject-all.git` repository. Download zip from this branch.We will extract and copy `ansible` directory under our local `vprofileciproject` directory when we are in `cicd-jenkins-ansible` branch.
+We will add code from `jenkins-ansible-code` branch of `https://github.com/pandeyshubham03/vprofileproject-all.git` repository. Download zip from this branch.We will extract and copy `ansible` directory under our local `vprofileciproject` directory when we are in `cicd-jenkins-ansible` branch.
 
 ```sh
 git add .

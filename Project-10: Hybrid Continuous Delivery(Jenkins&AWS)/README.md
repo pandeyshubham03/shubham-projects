@@ -250,4 +250,4 @@ Developers make code changes to staging environment. Once it is pushed to GitHub
 
 ### Step-6:  Clean-up
 
-Its time to delete resources we have craeted.
+Its time to delete resources we have created.

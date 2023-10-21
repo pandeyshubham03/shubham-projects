@@ -50,8 +50,6 @@ Name: kubeapp.aws-devops-journey-of-shubhampandey.net
 
 Then we will create 4 NS values to our Registered domain as `NS Record`.
 
-![](img/route53-record.png)
-
 ### Step-5: Login Ec2 and configure awscli
 
 SSH into your kops instance with your newly created pem key.
@@ -88,7 +86,6 @@ kops create cluster --name=kubeapp.aws-devops-journey-of-shubhampandey.net \
 --node-volume-size=8 --master-volume-size=8
 ```
 
-![](img/cluster-config-created.png)
 
 We can create cluster with below command, we need to specify the s3 bucket we use for state config.
 
@@ -101,8 +98,6 @@ After issuing thsi command, wait 10-15 minutes before validating the cluster wit
 kops validate cluster --state=s3://kubeapp-kops-state
 ```
 
-![](img/validate-cluster.png)
-
 ### Step-7: Create Volume for DB Pod
 
 We need to create an EBS volume to store mySQL data. Use below command to create one.
@@ -114,7 +109,6 @@ aws ec2 create-volume \
     --tag-specifications 'ResourceType=volume,Tags=[{Key=KubernetesCluster,Value=kubeapp.aws-devops-journey-of-shubhampandey.net}]'
 ```
 
-![](img/volume-created.png)
 
 Next, I will label the nodes with `zone=us-east-1a` and `zone=us-east-1b` accordingly. We need to make sure that we are running our DB pod in the same zone our EBS volume created.
 For this reason we will create labels for our nodes. 
@@ -210,23 +204,13 @@ kubectl apply -f vproapp-svc.yml
 
 We will create a A record with Alias to Load balancer.
 
-![](img/route53-cname.png)
-
 Lets validate our application from browser with our new dns name.
-
-![](img/app-login.png)
 
 We validated DB by successfully logging in with admin_vp/admin_vp username&pwd.
 
-![](img/db-working.png)
-
 We can validate RabbitMQ service.
 
-![](img/rmq-working.png)
-
 Lastly, we can verify our memcached service.
-
-![](img/mcd-working.png)
 
 ### Step-14: Cleanup 
 

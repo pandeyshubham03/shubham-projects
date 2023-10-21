@@ -132,7 +132,7 @@ UserData: tomcat_ubuntu.sh
 
 - Clone the repository.
 ```sh
-git clone https://github.com/rumeysakdogan/vprofile-project.git
+git clone https://github.com/pandeyshubham03/shubham-projects.git
 ```
 
 - Before we create our artifact, we need to do changes to our `application.properties` file under `/src/main/resources` directory for below lines.

@@ -201,7 +201,7 @@ Percentage :50 %
 EC2 key pair: vprofile-bean-key
 ```
 
-### Step-6: Update Backend SecGrp & ELB
+### Step-7: Update Backend SecGrp & ELB
 
 - Our application instances created by BeanStalk will communicate with Backend services. We need update `vprofile-backend-SG` to allow connection from our appSecGrp created by Beanstalk on port `3306`, `11211` and `5671` 
 ```sh

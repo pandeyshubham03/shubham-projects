@@ -103,7 +103,7 @@ We need to have an account, from account avatar -> `My Account` -> `Security`. G
 
 Next we create a project, `+` -> `Analyze Project` -> `create project manually`. Below details will be used in our Build.
 ```sh
-Organization: rumeysa-devops-projects
+Organization: shubham-devops-projects
 Project key: vprofile-repo-rd
 Public
 ```

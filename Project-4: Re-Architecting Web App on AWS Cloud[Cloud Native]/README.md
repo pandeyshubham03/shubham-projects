@@ -158,7 +158,7 @@ mysql> show databases;
 - Next we will clone our source code here to use script to initialize our database. After these commands we should be able to see 2 tables `role`, `user`, and `user_role`.
 
 ```sh
-git clone https://github.com/rumeysakdogan/vprofileproject-all.git
+git clone https://github.com/pandeyshubham03/shubham-projects.git
 cd vprofileproject-all
 git checkout aws-Refactor
 cd src/main/resources
@@ -167,7 +167,7 @@ mysql -h vprofile-rds-mysql.chrgxmhxkprk.us-east-1.rds.amazonaws.com -u admin -p
 show tables;
 ```
 
-### Step-5: Create Elastic Beanstalk Environment
+### Step-6: Create Elastic Beanstalk Environment
 
 - Our backend services are ready now. We will copy their endpoints from AWS console. These information will be used in our `application.properties` file
 ```sh
@@ -201,7 +201,7 @@ Percentage :50 %
 EC2 key pair: vprofile-bean-key
 ```
 
-### Step-5: Update Backend SecGrp & ELB
+### Step-6: Update Backend SecGrp & ELB
 
 - Our application instances created by BeanStalk will communicate with Backend services. We need update `vprofile-backend-SG` to allow connection from our appSecGrp created by Beanstalk on port `3306`, `11211` and `5671` 
 ```sh

@@ -141,8 +141,6 @@ Our resources are created.
 
 Now we can validate the application from browser by using `website_url` output value.
 
-![](images/application.png)
-
 This is a simple Phonebook application. Below are the functionality of resources:
 ```sh
 <url>/ : is used to search contact names

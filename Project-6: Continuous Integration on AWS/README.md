@@ -193,7 +193,7 @@ SourceProvider: Codecommit
 branch: ci-aws
 Change detection options: CloudWatch events
 Build Provider: CodeBuild
-ProjectName: vprofile-Build-Aetifact
+ProjectName: vprofile-Build-Artifact
 BuildType: single build
 Deploy provider: Amazon S3
 Bucket name: vprofile98-build-artifact

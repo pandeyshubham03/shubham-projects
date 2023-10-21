@@ -42,6 +42,7 @@ sudo apt install awscli -y
 aws sts get-caller-identity
 ```
 
+
 ### Step-2: Warm-up for AWS Cloud Playbooks
 
 We will create a new directory and create a test playbook.

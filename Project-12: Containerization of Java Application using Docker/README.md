@@ -86,7 +86,7 @@ Create an `app` directory under `Docker-files` directory. Copy the below content
 ```sh
 FROM tomcat:8-jre11
 LABEL "Project"="Vprofile"
-LABEL "Author"="Rumeysa"
+LABEL "Author"="Shubham"
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
@@ -101,7 +101,7 @@ Create an `db` directory under `Docker-files` directory. Copy the below content 
 ```sh
 FROM mysql:5.7.25
 LABEL "Project"="Vprofile"
-LABEL "Author"="Rumeysa"
+LABEL "Author"="Shubham"
 ENV MYSQL_ROOT_PASSWORD="vprodbpass"
 ENV MYSQL_DATABASE="accounts"
 ADD db_backup.sql /docker-entrypoint-initdb.d/db_backup.sql
@@ -116,7 +116,7 @@ Create an `web` directory under `Docker-files` directory. Copy the below content
 ```sh
 FROM nginx
 LABEL "Project"="Vprofile"
-LABEL "Author"="Rumeysa"
+LABEL "Author"="Shubham"
 RUN rm -rf /etc/nginx/conf.d/default.conf
 COPY nginxvproapp.conf /etc/nginx/conf.d/vproapp.conf
 ```

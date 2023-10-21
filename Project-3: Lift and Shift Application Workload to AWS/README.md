@@ -257,9 +257,8 @@ Select the certificate for HTTPS
 
 ![](images/record-for-elb.png)
 
-- Lets check our application using our DNS. We can securely connect to our application!
+- We now check our application using our DNS. We can securely connect to our application!
 
-![](images/vprofileapp-https.png)  
 
 ### Step-10: Configure AutoScaling Group for Application Instances
 

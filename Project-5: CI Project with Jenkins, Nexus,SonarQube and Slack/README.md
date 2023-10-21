@@ -442,7 +442,7 @@ path: Jenkinsfile
 ```sh
 sudo -i
 sudo su - jenkins
-git ls-remote -h -- git@github.com:rumeysakdogan/vprociproject.git HEAD
+git ls-remote -h -- git@github.com:pandeyshubham03/shubham-projects.git HEAD
 ```
 
 - Now its Build time. Our build pipeline is successful!
@@ -457,7 +457,7 @@ git ls-remote -h -- git@github.com:rumeysakdogan/vprociproject.git HEAD
 
 ![](images/github-webhook.png)
 
-- Next we will go to Jenkins and add below configuration to our `vprofile-ci-pipeline` jon.
+- Next we will go to Jenkins and add below configuration to our `vprofile-ci-pipeline` job.
 ```sh
 Build Trigger: GitHub hook trigger for GITScm polling
 ```
@@ -648,8 +648,6 @@ Secret: <paste_token>
 name: slacktoken
 description: slacktoken
 ```
-
-![](images/slack-connection-successful.png)
 
 - We will add below part to our Jenkinsfile in the same level with stages and push our changes.
 ```sh

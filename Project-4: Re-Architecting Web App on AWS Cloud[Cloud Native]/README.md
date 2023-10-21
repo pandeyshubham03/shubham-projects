@@ -217,7 +217,7 @@ Add Listener HTTPS port 443 with SSL cert
 Processes: Health check path : /login
 ```
 
-### Step-6: Build and Deploy Artifact
+### Step-8: Build and Deploy Artifact
 
 - Go to directory that we cloned project, we need to checkout aws-refactor branch. Update below fields in `application.properties` file with correct endpoints and username/pwd.
 ```sh
@@ -249,7 +249,7 @@ mvn install
 ![](images/app-running-in-bs.png)
 ![](images/app-running-from-beanstalk.png)
 
-### Step-7: Create DNS Record in Route53 for Application
+### Step-9: Create DNS Record in Route53 for Application
 
 - We will create an A record which aliasing Elastic Beanstalk endpoint.
 
@@ -257,7 +257,7 @@ mvn install
 
 ![](images/create-record-for-ebstalk.png)
 
-### Step-8: Create Cloudfront Distribution for CDN
+### Step-10: Create Cloudfront Distribution for CDN
 
 - Cloudfront is Content Delivery Nettwork service of AWS. It uses Edge Locations around the world to deliver contents globally with best performance. We will to `CloudFront` and create a distribution.
 ```sh
@@ -271,6 +271,6 @@ Security policy: TLSv1
 
 ![](images/app-distributed-from-cdn.png)
 
-### Step-9: Clean-up
+### Step-11: Clean-up
 
 - We will delete all resources that we have created throughout the project.

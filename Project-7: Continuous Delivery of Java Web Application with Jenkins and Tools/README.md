@@ -344,7 +344,7 @@ Member repositories:
 
 - The content will be cloned from below link:
 ```sh
-git clone -b ci-jenkins git@github.com:rumeysakdogan/vprofileproject-all.git
+git clone -b ci-jenkins git@github.com:pandeyshubham03/shubham-projects.git
 ```
 
 ### Step-6: Build Job with Nexus Repo 
@@ -438,7 +438,7 @@ path: Jenkinsfile
 ```sh
 sudo -i
 sudo su - jenkins
-git ls-remote -h -- git@github.com:rumeysakdogan/vprociproject.git HEAD
+git ls-remote -h -- git@github.com:pandeyshubham03/shubham-projects.git HEAD
 ```
 
 - Now its Build time. Our build pipeline is successful!
@@ -646,7 +646,7 @@ git checkout -b cicd-jenkins
 
 - We will go to `docker` branch of below repository and download zip file and add it to your source code in your local repository for `cicd-jenkins` branch.
 ```sh
-https://github.com/rumeysakdogan/vprofileproject-all.git
+https://github.com/pandeyshubham03/vprofileproject-all.git
 ```
 
 - Create two new directory and copy Jenkinsfile to both of them. We will write our Stage/Prod pipeline.

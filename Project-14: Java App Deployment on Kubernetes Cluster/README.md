@@ -194,7 +194,7 @@ kubectl get all
 
 ### Step-12: Application Deployment&Service Definition
 
-Create a K8s Application deployment and LoadBalancer type service file as in given under `kubernetes` directory.Run below commands to create files:
+Create a K8s Application deployment and LoadBalancer type service file as in given under `kubernetes` directory. Run below commands to create files:
 ```sh
 kubectl apply -f vproapp-dep.yml
 kubectl apply -f vproapp-svc.yml
